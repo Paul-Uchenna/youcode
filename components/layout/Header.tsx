@@ -3,13 +3,9 @@ import Link from "next/link";
 import { ThemeToggle } from "../ThemeToggle";
 import { Typography } from "../ui/Typography";
 import Image from "next/image";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { AuthButton } from "@/src/features/auth/AuthButton";
 
 export async function Header() {
-  const session = await getServerSession(authOptions);
-
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
