@@ -24,12 +24,12 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <head />
         <body
           className={cn(
-            "h-full bg-background font-sans antialiased p-4",
+            "h-full bg-background font-sans antialiased",
             fontSans.variable
           )}
         >
           <Providers>
-            <div className="relative flex min-h-screen flex-col">
+            <div className="flex min-h-screen flex-col">
               <Header />
               <div className="flex-1">{children}</div>
               <Footer />
