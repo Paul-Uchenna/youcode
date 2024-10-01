@@ -11,9 +11,9 @@ export async function Header() {
   const session = await getServerSession(authOptions);
 
   return (
-    <header className="bg-background sticky top-0 z-40 w-full border-b">
+    <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center gap-2">
           <Image src="/images/logo.svg" width={50} height={35} alt="Logo" />
           <Typography variant="h3" as={Link} href="/">
             {SiteConfig.title}
