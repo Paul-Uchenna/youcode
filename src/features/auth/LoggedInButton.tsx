@@ -49,7 +49,7 @@ export const LoggedInButton = ({ user }: LoggedInButtonProps) => {
                 />
               )}
             </Avatar>
-            {user.name}
+            <div>{user.name?.split(" ")[0]}</div>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
