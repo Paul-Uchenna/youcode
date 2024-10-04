@@ -5,7 +5,7 @@ export default async function Home() {
     <>
       <Card>
         <CardHeader>
-          <CardTitle>Welcome to yOU code</CardTitle>
+          <CardTitle>Welcome to You Code</CardTitle>
         </CardHeader>
       </Card>
     </>
