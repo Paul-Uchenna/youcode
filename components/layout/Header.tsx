@@ -4,6 +4,7 @@ import { ThemeToggle } from "../ThemeToggle";
 import { Typography } from "../ui/Typography";
 import Image from "next/image";
 import { AuthButton } from "@/src/features/auth/AuthButton";
+import { Button } from "../ui/button";
 
 export function Header() {
   return (
@@ -14,6 +15,11 @@ export function Header() {
           <Typography variant="h3" as={Link} href="/">
             {SiteConfig.title}
           </Typography>
+          <Link href="/">
+            <Button variant="outline" size="lg" className="ml-6 font-semibold">
+              Home
+            </Button>
+          </Link>
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-4">
